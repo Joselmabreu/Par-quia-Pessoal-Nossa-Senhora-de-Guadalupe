@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão, você pode usar Google Fonts */
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Fundo claro */
+    color: #333;
+}
+
+/* --- 2. CABEÇALHO (HEADER) E NAVEGAÇÃO (NAV) --- */
+header {
+    background-image: linear-gradient(to right, #ffffff, #7fafa7, #156b5d, #004d40); /* Cor escura/profunda (ex: verde musgo/petróleo) */
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between; /* Distribui logo e navegação */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+}
+
+.logo img {
+    height: 100px; /* Tamanho do logo */
+    margin-right: 15px;
+    border-radius: 50px;
+    
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #008060; /* Cor mais clara ao passar o mouse */
+    border-radius: 5px;
+}
+
+/* --- 3. CONTEÚDO PRINCIPAL (MAIN) E SEÇÕES --- */
+main {
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* SEÇÃO HERO (DESTAQUE) */
+.hero {
+    background: url('imagens/igreja.jpg') no-repeat center center/cover; /* Altere para a imagem da sua igreja */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.hero h2 {
+    color: white;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ff9800; /* Cor de destaque (ex: dourado/laranja) */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #e68900;
+}
+
+/* ESTILIZAÇÃO ESPECÍFICA */
+#missas ul {
+    list-style: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#missas li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #004d40;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.lista-pastorais span {
+    display: inline-block;
+    background-color: #e0f2f1; /* Fundo claro para tags */
+    color: #004d40;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* --- 4. RODAPÉ (FOOTER) --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+
+.redes-sociais a {
+    color: #ff9800;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+/* --- 5. RESPONSIVIDADE BÁSICA (MEDIA QUERIES) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        background: #004d40; /* Cor escura/profunda (ex: verde musgo/petróleo) */
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+}
